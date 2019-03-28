@@ -1,0 +1,275 @@
+@import './vendors/reset.scss';
+
+
+* {
+	box-sizing: border-box;
+	list-style: none;
+}
+
+
+body {
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+
+}
+
+// .header {
+//   background-size: auto 30px;
+// }
+
+// .menu {
+//   // width: 100vw;
+//   // background-color:whitesmoke;
+//   // padding: 30px;
+//   // display: flex;
+//   // justify-content: space-around;
+//   // border: 2px solid black;
+  
+// }
+
+// .menu {
+//   background-color: aliceblue;
+ 
+// }
+
+.menu__links {
+  //display: flex;
+ //justify-content: space-around;
+}
+
+// .menu li:hover{
+//   color: rgb(165, 164, 164)
+// }
+
+// li > img {
+//   background-color: blue;
+//   //position: absolute;
+//   // top: 1em;
+//   // left: 39em;
+//   padding: 8px;
+//   //top: 100em;
+ 
+
+// }
+
+.title * {
+  color : whitesmoke;
+}
+
+.title {
+  position: absolute; /* postulat de départ */
+  top: 50%; 
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -80%);
+
+    .title__name {
+      text-align: center;
+      font-weight: bold;
+      font-size: 50px;
+      margin: 10px;
+    }
+
+    .title__subtitle {
+      text-align: center;
+      width: 300px;
+    }
+}
+
+
+.form {
+  position: absolute; /* postulat de départ */
+  width: 14em;
+  top: 50%; 
+  left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, 80%);
+}
+
+form label {
+  color: whitesmoke;
+  text-align: left;
+  margin-left: 36px;
+}
+
+input[type=email] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+input[type=submit]{
+  transform: translateX(80%);
+  background-color: whitesmoke;
+  border: 2px solid black;
+  text-align: left;
+  margin-left: 42px;
+}
+
+// .logo * {
+//   color: rgb(0, 255, 128);
+// }
+
+// .logo {
+//   text-align: center;
+//   transform: translateY(-50%);
+// }
+.logo {
+  display: none;
+}
+
+figcaption {
+  display: none;
+}
+
+
+// footer {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   width: 100vw;
+//   padding: 10px;
+//   background-color: rgb(165, 164, 164);
+//   border: 2px solid black;
+// }
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+  // .menu--show {
+  //   background-color:green;
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0%;
+  //   //z-index: 999;
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // align-items: center;
+  //   // justify-content: space-between;
+  //   text-align: center;
+  //   padding: 5px;
+  // }
+
+  // .menu--show * {
+  //   padding:  5px;
+  // }
+
+  .menu {
+    display : none;
+    opacity: 0;
+  }
+
+  .menu--show {
+   //display: none;
+    display : flex;
+    opacity: 1;
+    background-color: aliceblue;
+    border: solid 2px black;
+    position : relative;
+    top: 376px;
+    //left: 50px;
+    //text-align: center;
+    z-index: 10;
+
+    .menu__links {
+      //display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      background-color: aliceblue;
+      width: 100vw;
+      
+      li {
+        padding: 8px;
+        //text-align: center;
+      }
+    }
+  }
+  
+  .menu__page--logo{
+    display: none;
+  }
+
+  .title * {
+    color : whitesmoke;
+  }
+
+  .title {
+    position: absolute; /* postulat de départ */
+    top: 50%; 
+    left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -80%);
+
+      .title__name {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+      }
+
+      .title__subtitle {
+        text-align: center;
+        width: 300px;
+      }
+  }
+
+  
+
+  .form {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 80%);
+  }
+
+
+
+  form label {
+    color: whitesmoke;
+  }
+
+  input[type=email] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+  }
+
+  input[type=submit]{
+    transform: translateX(80%);
+    background-color: whitesmoke;
+    border: 2px solid black;
+  }
+
+  .logo * {
+    color: rgb(0, 255, 128);
+  }
+
+  .logo {
+    display: inline;
+    position: absolute;
+    top: 85%; 
+    left: 80%; 
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+
+
+  figcaption {
+    display: block;
+  }
+
+ 
+
+
+}
