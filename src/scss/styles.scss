@@ -39,13 +39,28 @@ body {
 // }
 
 .menu__links {
-  //display: flex;
- //justify-content: space-around;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+
+  li > img {
+    background-color: aliceblue;
+    position: relative;
+    top: 30px;
+    padding: 6px;
+    width: 110px;
+    height: 110px;
+  }
+
 }
 
-// .menu li:hover{
-//   color: rgb(165, 164, 164)
-// }
+.menu__links li:hover{
+  color: rgb(165, 164, 164)
+}
 
 // li > img {
 //   background-color: blue;
@@ -54,8 +69,6 @@ body {
 //   // left: 39em;
 //   padding: 8px;
 //   //top: 100em;
- 
-
 // }
 
 .title * {
@@ -143,7 +156,7 @@ figcaption {
 
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 900px) {
   // .menu--show {
   //   background-color:green;
   //   width: 100%;
@@ -187,7 +200,7 @@ figcaption {
       position: absolute;
       background-color: aliceblue;
       width: 100vw;
-      
+      height: 35vh;
       li {
         padding: 8px;
         //text-align: center;
